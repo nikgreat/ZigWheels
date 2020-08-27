@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="implement.ZigTest">
+      <class name="run.ZigTest">
         <methods>
           <include name="f"/>
+          <include name="third"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="second"/>
         </methods>
-      </class> <!-- implement.ZigTest -->
+      </class> <!-- run.ZigTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
