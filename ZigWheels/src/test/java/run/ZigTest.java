@@ -66,10 +66,10 @@ public class ZigTest {
 	 
 	 scrnshot scrn = new scrnshot(driver);
 	 Thread.sleep(1000);
-	 scrn.takeSnapShot("C:\\Program Files\\Java\\jdk-12.0.1\\MyWorkspaces\\ZigWheels\\ScreenShot\\image.jpg");
+	 scrn.takeSnapShot("D:\\ScreenShot\\image.jpg");
 	 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 	 
-	 logger.addScreenCaptureFromPath("C:\\Program Files\\Java\\jdk-12.0.1\\MyWorkspaces\\ZigWheels\\ScreenShot\\image.jpg");
+	 logger.addScreenCaptureFromPath("D:\\ScreenShot\\image.jpg");
 	 extent.flush();
 	 
 	 
