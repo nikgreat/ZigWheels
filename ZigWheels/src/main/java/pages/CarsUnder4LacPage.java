@@ -21,7 +21,8 @@ public class CarsUnder4LacPage extends PageValidation{
 	
 	public static void ClickMore() {
 		
-		driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[1]/div/div/span")).click();
+		//driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[1]/div/div/span")).click();
+	   driver.findElement(By.cssSelector("#carModels > ul > li.txt-c.moreModels.mb-20 > span")).click();
 	}
 	
 

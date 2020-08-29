@@ -4,6 +4,12 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+
+import com.google.common.escape.Escapers.Builder;
+
 import library.Repository;
 
 public class NewCarsPage extends PageValidation {
@@ -20,7 +26,27 @@ public class NewCarsPage extends PageValidation {
 		
 		// pgvalid();
 		// driver.get("https://www.zigwheels.com/newcars");
-		 driver.findElement(NewCarsLink).click();
+		
+		Actions action = new Actions(driver);
+		WebElement element = driver.findElement(NewCarsLink);
+		WebElement el2 = driver.findElement(By.cssSelector("#headerNewNavWrap > div.col-lg-10 > ul > li:nth-child(3) > ul > li > div.h-dd-r > ul > li:nth-child(2) > a"));
+		
+		Action moveOver = action
+				.moveToElement(element)
+				
+				
+				.build();
+		moveOver.perform();
+		
+		Action moveClick = action
+				.moveToElement(el2)
+				.click()
+				.build();
+		moveClick.perform();
+		
+		
+		
+		// driver.findElement(NewCarsLink).click();
 		
 		 
 	}

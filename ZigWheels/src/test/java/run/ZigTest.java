@@ -17,6 +17,7 @@ import pages.NewCarsPage;
 import testData.WriteExcel;
 import pages.HomePage;
 import pages.PageValidation;
+import pages.RequiredBikes;
 
 import org.testng.annotations.BeforeClass;
 
@@ -61,7 +62,7 @@ public class ZigTest {
 	 
 	 extent.attachReporter(reporter);
 	 ExtentTest logger = extent.createTest("HomePage");
-	 logger.log(Status.INFO, "Land on Homeplage");
+	 logger.log(Status.INFO, "Land on Homepage");
 	 logger.log(Status.PASS, "Homepage Opened!");
 	 
 	 scrnshot scrn = new scrnshot(driver);
@@ -78,10 +79,11 @@ public class ZigTest {
   }
   
   @Test(priority=1, groups = "regression")
-  public static void second() throws IOException{
+  public static void second() throws IOException, InterruptedException{
 	  
 	  new NewCarsPage(driver);
 	  NewCarsPage.NewCars();
+	  Thread.sleep(5000);
 	 
 	  driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	  NewCarsPage.NewCars(Repository.object());
@@ -95,7 +97,7 @@ public class ZigTest {
 	  CarsUnder4LacPage.ext();
 	  
 	  CarsUnder4LacPage.getTitleOfPage();
-	  CarsUnder4LacPage.ClickMore();
+	  //CarsUnder4LacPage.ClickMore();
 	  
 	  new WriteExcel(driver);
 	  WriteExcel.write();
@@ -107,6 +109,10 @@ public class ZigTest {
 	  fac.scroll();
 	  Thread.sleep(2000);
 	  
+	  CarsUnder4LacPage.ClickMore();
+	  
+	  new RequiredBikes(driver);
+	  RequiredBikes.BikeList();
 	  
   }
 

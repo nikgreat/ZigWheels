@@ -5,10 +5,10 @@
     <classes>
       <class name="run.ZigTest">
         <methods>
-          <include name="f"/>
           <include name="third"/>
           <include name="beforeClass"/>
           <include name="second"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- run.ZigTest -->
     </classes>
