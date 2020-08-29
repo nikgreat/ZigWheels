@@ -28,30 +28,28 @@ public class NewCarsPage extends PageValidation {
 		// pgvalid();
 		// driver.get("https://www.zigwheels.com/newcars");
 		
-		Actions action = new Actions(driver);
-		WebElement element = driver.findElement(NewCarsLink);
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		WebElement el2 = driver.findElement(By.cssSelector("#headerNewNavWrap > div.col-lg-10 > ul > li:nth-child(3) > ul > li > div.h-dd-r > ul > li:nth-child(2) > a"));
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		Action moveOver = action
-				.moveToElement(element)
-				
-				
-				.build();
-		moveOver.perform();
-		
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		Action moveClick = action
-				.moveToElement(el2)
-				.click()
-				.build();
-		moveClick.perform();
+		/*
+		 * Actions action = new Actions(driver); WebElement element =
+		 * driver.findElement(NewCarsLink); driver.manage().timeouts().implicitlyWait(2,
+		 * TimeUnit.SECONDS); WebElement el2 = driver.findElement(By.
+		 * cssSelector("#headerNewNavWrap > div.col-lg-10 > ul > li:nth-child(3) > ul > li > div.h-dd-r > ul > li:nth-child(2) > a"
+		 * )); driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		 * 
+		 * Action moveOver = action .moveToElement(element)
+		 * 
+		 * 
+		 * .build(); moveOver.perform();
+		 * 
+		 * driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		 * 
+		 * Action moveClick = action .moveToElement(el2) .click() .build();
+		 * moveClick.perform();
+		 */
 		
 		
 		
-		// driver.findElement(NewCarsLink).click();
+		 driver.findElement(NewCarsLink).click();
+		 driver.findElement(By.cssSelector("#zwn-brandslider > li.gscr_lslide.gscr_active > a.pt-15 > span > span")).click();
 		
 		 
 	}

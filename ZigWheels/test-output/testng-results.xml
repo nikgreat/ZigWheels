@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22647" started-at="2020-08-29T19:24:06Z" finished-at="2020-08-29T19:24:29Z">
+  <suite name="Default suite" duration-ms="26445" started-at="2020-08-29T19:43:14Z" finished-at="2020-08-29T19:43:40Z">
     <groups>
       <group name="regression">
         <method signature="ZigTest.f()[pri:0, instance:run.ZigTest@192b07fd]" name="f" class="run.ZigTest"/>
@@ -13,25 +13,25 @@
         <method signature="ZigTest.third()[pri:0, instance:run.ZigTest@192b07fd]" name="third" class="run.ZigTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="22647" started-at="2020-08-29T19:24:06Z" finished-at="2020-08-29T19:24:29Z">
+    <test name="Default test" duration-ms="26445" started-at="2020-08-29T19:43:14Z" finished-at="2020-08-29T19:43:40Z">
       <class name="run.ZigTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:run.ZigTest@192b07fd]" name="beforeClass" is-config="true" duration-ms="4898" started-at="2020-08-30T00:54:06Z" finished-at="2020-08-30T00:54:11Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:run.ZigTest@192b07fd]" name="beforeClass" is-config="true" duration-ms="4870" started-at="2020-08-30T01:13:14Z" finished-at="2020-08-30T01:13:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="f()[pri:0, instance:run.ZigTest@192b07fd]" name="f" duration-ms="8606" started-at="2020-08-30T00:54:11Z" finished-at="2020-08-30T00:54:20Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:run.ZigTest@192b07fd]" name="f" duration-ms="8805" started-at="2020-08-30T01:13:19Z" finished-at="2020-08-30T01:13:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="second()[pri:0, instance:run.ZigTest@192b07fd]" name="second" duration-ms="5841" started-at="2020-08-30T00:54:20Z" finished-at="2020-08-30T00:54:26Z">
+        <test-method status="PASS" signature="second()[pri:0, instance:run.ZigTest@192b07fd]" name="second" duration-ms="8471" started-at="2020-08-30T01:13:27Z" finished-at="2020-08-30T01:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- second -->
-        <test-method status="PASS" signature="third()[pri:0, instance:run.ZigTest@192b07fd]" name="third" duration-ms="3290" started-at="2020-08-30T00:54:26Z" finished-at="2020-08-30T00:54:29Z">
+        <test-method status="PASS" signature="third()[pri:0, instance:run.ZigTest@192b07fd]" name="third" duration-ms="3027" started-at="2020-08-30T01:13:36Z" finished-at="2020-08-30T01:13:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- third -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:run.ZigTest@192b07fd]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-08-30T00:54:29Z" finished-at="2020-08-30T00:54:29Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:run.ZigTest@192b07fd]" name="afterClass" is-config="true" duration-ms="1259" started-at="2020-08-30T01:13:39Z" finished-at="2020-08-30T01:13:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
