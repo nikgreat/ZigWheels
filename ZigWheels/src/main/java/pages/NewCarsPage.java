@@ -1,6 +1,7 @@
 package pages;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,7 @@ public class NewCarsPage extends PageValidation {
 		this.driver = driver;
 	}
 	
-	public static void NewCars() throws IOException {
+	public static void NewCars() throws IOException, InterruptedException {
 		
 		
 		By NewCarsLink = Repository.o2();
@@ -29,7 +30,9 @@ public class NewCarsPage extends PageValidation {
 		
 		Actions action = new Actions(driver);
 		WebElement element = driver.findElement(NewCarsLink);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		WebElement el2 = driver.findElement(By.cssSelector("#headerNewNavWrap > div.col-lg-10 > ul > li:nth-child(3) > ul > li > div.h-dd-r > ul > li:nth-child(2) > a"));
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		Action moveOver = action
 				.moveToElement(element)
@@ -37,6 +40,8 @@ public class NewCarsPage extends PageValidation {
 				
 				.build();
 		moveOver.perform();
+		
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		Action moveClick = action
 				.moveToElement(el2)
